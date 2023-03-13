@@ -1,0 +1,12 @@
+@mixin mq-up($breakpoint: md) {
+  @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+// 追加
+@mixin mq-down($breakpoint: md) {
+  @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}

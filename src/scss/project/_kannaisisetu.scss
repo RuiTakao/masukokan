@@ -1,0 +1,1232 @@
+.p-kannaisisetu {
+  &__fv {
+    &__title {
+      text-align: center;
+      color: #23460a;
+      font-size: 42px;
+    }
+
+    &__image {
+      margin-top: 46px;
+      height: 280px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 75%;
+
+      @include mq-up(xl) {
+        height: 450px;
+      }
+    }
+  }
+
+  &__intro {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mq-up(xl) {
+      height: 785px;
+    }
+
+    &__container {
+      position: relative;
+      margin: 0 auto;
+      max-width: 1180px;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 32px;
+      color: #729d54;
+
+      @include mq-up(xl) {
+        width: 100%;
+        font-size: 48px;
+      }
+    }
+
+    &__text {
+      margin: 0 auto;
+      margin-top: 70px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 2;
+      width: 90%;
+
+      @include mq-up(xl) {
+        width: 100%;
+        font-size: 20px;
+      }
+
+      @include mq-up(2xl) {
+        font-size: 24px;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      width: 300px;
+      right: 0px;
+
+      @include mq-up(lg) {
+        width: 360px;
+        right: -150px;
+        bottom: -140px;
+      }
+
+      @include mq-up(xl) {
+        width: 360px;
+        right: -150px;
+        bottom: -140px;
+      }
+
+      @include mq-up(2xl) {
+        width: 400px;
+        right: -180px;
+        bottom: -140px;
+      }
+    }
+  }
+
+  &__onsen-slide {
+    height: 480px;
+    padding-bottom: 56px;
+    margin-top: 300px;
+
+    @include mq-up(lg) {
+      height: 830px;
+      margin-top: 0;
+      padding-bottom: 100px;
+    }
+
+    .swiper-scrollbar {
+      width: 90% !important;
+      transform: translateX(-50%) !important;
+      left: 50% !important;
+
+      @include mq-up(lg) {
+        width: 800px !important;
+      }
+    }
+    .swiper {
+      height: 100%;
+    }
+    .swiper-wrapper {
+      align-items: center;
+    }
+    .swiper-slide {
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      line-height: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+        align-self: center;
+      }
+    }
+  }
+
+  &__message {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mq-up(xl) {
+      background-size: cover;
+    }
+
+    &__container {
+      max-width: 1180px;
+      margin: 0 auto;
+      width: 90%;
+
+      @include mq-up(xl) {
+        width: 100%;
+      }
+    }
+
+    &__title {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    &__text {
+      text-align: center;
+      line-height: 56px;
+      margin-top: 60px;
+    }
+
+    &__content {
+      margin-top: 100px;
+      border: 1px solid #b6bcb1;
+      padding: 30px 10px;
+
+      @include mq-up(md) {
+        padding: 60px 40px;
+      }
+
+      &__title {
+        position: relative;
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 50px;
+
+        @include mq-up(xl) {
+          text-align: left;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 60px;
+          height: 1px;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background: #b6bcb1;
+
+          @include mq-up(xl) {
+            left: 0;
+            transform: translateX(0);
+          }
+        }
+      }
+
+      &__text {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  &__sisetu-introduction {
+    background: #f7f4ea;
+    padding: 60px 0;
+  }
+
+  // 宴会場
+  &__enkaijou {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+    border-bottom: 1px solid #b6bcb1;
+    padding-bottom: 80px;
+
+    &__title {
+      text-align: center;
+      color: #729d54;
+      position: relative;
+      padding-bottom: 16px;
+      font-size: 28px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background: #b6bcb1;
+      }
+    }
+
+    &__sub-title {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    // 末広の間
+    &__suehironoma {
+      margin-top: 80px;
+
+      @include mq-up(lg) {
+        display: flex;
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+
+        @include mq-up(lg) {
+          width: 50%;
+        }
+      }
+
+      &__content-area {
+        @include mq-up(lg) {
+          margin-left: 85px;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        color: #23460a;
+        font-size: 24px;
+        margin-top: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      &__sub-title {
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        position: relative;
+        padding-bottom: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 1px;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background: #b6bcb1;
+
+          @include mq-up(lg) {
+            left: 0;
+            transform: translateX(0);
+          }
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        width: 90%;
+        line-height: 1.5;
+      }
+    }
+
+    // 平安の間
+    &__heiannoma {
+      margin-top: 80px;
+      @include mq-up(lg) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+
+        @include mq-up(lg) {
+          width: 50%;
+          order: 2;
+        }
+      }
+
+      &__content-area {
+        @include mq-up(lg) {
+          order: 1;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        color: #23460a;
+        font-size: 24px;
+        margin-top: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+      }
+
+      &__sub-title {
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        position: relative;
+        padding-bottom: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 1px;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background: #b6bcb1;
+
+          @include mq-up(lg) {
+            left: 0;
+            transform: translateX(0);
+          }
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        width: 90%;
+        line-height: 1.5;
+      }
+    }
+
+    // 益子座
+    &__masukoza {
+      margin-top: 80px;
+      @include mq-up(lg) {
+        display: flex;
+      }
+
+      &__content-area {
+        @include mq-up(lg) {
+          margin-left: 85px;
+        }
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+
+        @include mq-up(lg) {
+          width: 50%;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        color: #23460a;
+        font-size: 24px;
+        margin-top: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      &__sub-title {
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        position: relative;
+        padding-bottom: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 1px;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background: #b6bcb1;
+
+          @include mq-up(lg) {
+            left: 0;
+            transform: translateX(0);
+          }
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        width: 90%;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  // コンベンションホール会議室
+  &__convention-hall {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+    border-bottom: 1px solid #b6bcb1;
+    padding-bottom: 80px;
+    margin-top: 80px;
+
+    &__title {
+      text-align: center;
+      color: #729d54;
+      position: relative;
+      padding-bottom: 16px;
+      font-size: 28px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background: #b6bcb1;
+      }
+    }
+
+    &__sub-title {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    // 光
+    &__hikari {
+      margin-top: 80px;
+
+      @include mq-up(lg) {
+        display: flex;
+      }
+
+      &__content-area {
+        @include mq-up(lg) {
+          margin-left: 85px;
+        }
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+
+        @include mq-up(lg) {
+          width: 50%;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        color: #23460a;
+        font-size: 24px;
+        margin-top: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      &__sub-title {
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        position: relative;
+        padding-bottom: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 1px;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background: #b6bcb1;
+
+          @include mq-up(lg) {
+            left: 0;
+            transform: translateX(0);
+          }
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        width: 90%;
+        line-height: 1.5;
+      }
+    }
+
+    // 「リンカーン」「プレジデント」
+    &__rinkarn-president {
+      margin-top: 80px;
+
+      @include mq-up(lg) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__content-area {
+        @include mq-up(lg) {
+          order: 1;
+        }
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+
+        @include mq-up(lg) {
+          width: 50%;
+          order: 2;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        color: #23460a;
+        font-size: 24px;
+        margin-top: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      &__sub-title {
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        position: relative;
+        padding-bottom: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 1px;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background: #b6bcb1;
+
+          @include mq-up(lg) {
+            left: 0;
+            transform: translateX(0);
+          }
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        width: 90%;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  // 二次会処
+  &__nijikaidokoro {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+    border-bottom: 1px solid #b6bcb1;
+    padding-bottom: 80px;
+    margin-top: 80px;
+
+    &__title {
+      text-align: center;
+      color: #729d54;
+      position: relative;
+      padding-bottom: 16px;
+      font-size: 28px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background: #b6bcb1;
+      }
+    }
+
+    &__sub-title {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    // カラオケパーティールーム「響（ひびき）」
+    &__hibiki {
+      margin-top: 80px;
+
+      @include mq-up(lg) {
+        display: flex;
+      }
+
+      &__content-area {
+        @include mq-up(lg) {
+          margin-left: 85px;
+        }
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+
+        @include mq-up(lg) {
+          width: 50%;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        color: #23460a;
+        font-size: 24px;
+        margin-top: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        width: 90%;
+        line-height: 1.5;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+      }
+    }
+
+    // カラオケスナック「美写文（びしゃもん）」
+    &__bishamon {
+      margin-top: 80px;
+
+      @include mq-up(lg) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__content-area {
+        @include mq-up(lg) {
+          order: 1;
+        }
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+
+        @include mq-up(lg) {
+          width: 50%;
+          order: 2;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        color: #23460a;
+        font-size: 24px;
+        margin-top: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        width: 90%;
+        line-height: 1.5;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  // その他
+  &__other {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    margin-top: 80px;
+
+    &__title {
+      text-align: center;
+      color: #729d54;
+      position: relative;
+      padding-bottom: 16px;
+      font-size: 28px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background: #b6bcb1;
+      }
+    }
+
+    &__sub-title {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    // ロビー
+    &__roby {
+      margin-top: 80px;
+
+      @include mq-up(lg) {
+        display: flex;
+      }
+
+      &__content-area {
+        @include mq-up(lg) {
+          margin-left: 85px;
+        }
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+
+        @include mq-up(lg) {
+          width: 50%;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        color: #23460a;
+        font-size: 24px;
+        margin-top: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        width: 90%;
+        line-height: 1.5;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+      }
+    }
+
+    // fuwari
+    &__fuwari {
+      margin-top: 80px;
+
+      @include mq-up(lg) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__content-area {
+        @include mq-up(lg) {
+          order: 1;
+        }
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+
+        @include mq-up(lg) {
+          width: 50%;
+          order: 2;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        color: #23460a;
+        font-size: 24px;
+        margin-top: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        width: 90%;
+        line-height: 1.5;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+      }
+
+      &__button {
+        text-align: center;
+        display: block;
+        width: 100%;
+        border: 1px solid #23460a;
+        color: #23460a;
+        padding: 16px;
+        text-decoration: none;
+        margin-top: 40px;
+
+        @include mq-up(lg) {
+          width: 250px;
+        }
+
+        &:hover {
+          color: #fff;
+          background: #23460a;
+        }
+      }
+    }
+
+    // waku
+    &__waku {
+      margin-top: 80px;
+
+      @include mq-up(lg) {
+        display: flex;
+      }
+
+      &__content-area {
+        @include mq-up(lg) {
+          margin-left: 85px;
+        }
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+
+        @include mq-up(lg) {
+          width: 50%;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        color: #23460a;
+        font-size: 24px;
+        margin-top: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        width: 90%;
+        line-height: 1.5;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+      }
+
+      &__button {
+        text-align: center;
+        display: block;
+        width: 100%;
+        border: 1px solid #23460a;
+        color: #23460a;
+        padding: 16px;
+        text-decoration: none;
+        margin-top: 40px;
+
+        @include mq-up(lg) {
+          width: 250px;
+        }
+
+        &:hover {
+          color: #fff;
+          background: #23460a;
+        }
+      }
+    }
+
+    // tinositasake
+    &__tinositasake {
+      margin-top: 80px;
+
+      @include mq-up(lg) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__content-area {
+        @include mq-up(lg) {
+          order: 1;
+        }
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+
+        @include mq-up(lg) {
+          width: 50%;
+          order: 2;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        color: #23460a;
+        font-size: 24px;
+        margin-top: 30px;
+
+        @include mq-up(lg) {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        width: 90%;
+        line-height: 1.5;
+
+        @include mq-up(lg) {
+          text-align: left;
+        }
+      }
+
+      &__button {
+        text-align: center;
+        display: block;
+        width: 100%;
+        border: 1px solid #23460a;
+        color: #23460a;
+        padding: 16px;
+        text-decoration: none;
+        margin-top: 40px;
+
+        @include mq-up(lg) {
+          width: 250px;
+        }
+
+        &:hover {
+          color: #fff;
+          background: #23460a;
+        }
+      }
+    }
+  }
+
+  &__rental-laundry-ice-machine-bg {
+    padding-top: 85px;
+    padding-bottom: 100px;
+    position: relative;
+
+    &__m-left {
+      position: absolute;
+      background-size: cover;
+      top: 0;
+      left: 0;
+      width: 170px;
+      height: 108px;
+
+      @include mq-up(sm) {
+        width: 516px;
+        height: 327px;
+      }
+    }
+
+    &__m-right {
+      position: absolute;
+      background-size: cover;
+      top: 460px;
+      right: 0;
+      width: 298px;
+      height: 188px;
+
+      @include mq-up(sm) {
+        top: 220px;
+        width: 810px;
+        height: 513px;
+      }
+    }
+  }
+
+  &__rental {
+    &__title {
+      text-align: center;
+      color: #729d54;
+      position: relative;
+      padding-bottom: 16px;
+      font-size: 28px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background: #b6bcb1;
+      }
+    }
+
+    &__sub-title {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    &__list {
+      width: 90%;
+      max-width: 1180px;
+      margin: 0 auto;
+      margin-top: 40px;
+      padding: 10px 30px;
+      border: 1px solid #8ea27f;
+
+      @include mq-up(lg) {
+        padding: 40px 120px;
+      }
+    }
+
+    &__list-note {
+      margin-top: 20px;
+    }
+  }
+
+  &__laundry-ice-machine {
+    margin-top: 85px;
+
+    &__title {
+      text-align: center;
+      color: #729d54;
+      position: relative;
+      padding-bottom: 16px;
+      font-size: 28px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background: #b6bcb1;
+      }
+    }
+
+    &__sub-title {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    &__content {
+      width: 90%;
+      max-width: 1180px;
+      margin: 0 auto;
+      margin-top: 40px;
+      padding: 30px 10px;
+      border: 1px solid #8ea27f;
+
+      @include mq-up(lg) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 65px 120px;
+      }
+    }
+
+    &__content-img {
+      display: block;
+      width: 100%;
+
+      @include mq-up(lg) {
+        width: 350px;
+        height: auto;
+        order: 2;
+      }
+    }
+
+    &__content-list {
+      margin-top: 30px;
+
+      @include mq-up(lg) {
+        margin-top: 0;
+        width: 60%;
+        order: 1;
+      }
+
+      &__laundry-title {
+        padding: 10px 15px;
+        width: 100%;
+        border: 1px solid #707070;
+
+        @include mq-up(lg) {
+          width: 300px;
+        }
+      }
+
+      &__laundry-text {
+        margin-top: 30px;
+        line-height: 48px;
+      }
+
+      &__ice-machine-title {
+        padding: 10px 15px;
+        width: 100%;
+        border: 1px solid #707070;
+
+        @include mq-up(lg) {
+          width: 300px;
+          margin-top: 32px;
+        }
+      }
+
+      &__ice-machine-text {
+        margin-top: 30px;
+        line-height: 48px;
+      }
+
+      &__note {
+        margin-top: 48px;
+        @include mq-up(lg) {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}

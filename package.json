@@ -1,0 +1,23 @@
+{
+  "name": "themes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.3",
+    "sass": "^1.59.2",
+    "sass-loader": "^13.2.0",
+    "swiper": "^9.1.0",
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1"
+  }
+}
